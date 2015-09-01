@@ -47,7 +47,7 @@
 #
 */
 
-function generate_qr_code($d,$e = 'L',$s = 4)
+function generate_qr_code($d,$e = 'H',$s = 4,$v = 11)
 {	
 	/* ------ setting area ------ */
 	$path="func/qr_code/data";           /* You must set path to data files. */
