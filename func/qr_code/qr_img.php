@@ -48,7 +48,7 @@
 */
 
 function generate_qr_code($d,$e = 'L',$s = 4)
-{		
+{	
 	/* ------ setting area ------ */
 	$path="func/qr_code/data";           /* You must set path to data files. */
 	$image_path="func/qr_code/image";    /* You must set path to QRcode frame images. */
@@ -648,7 +648,7 @@ function generate_qr_code($d,$e = 'L',$s = 4)
 	ob_end_clean();						
 	$image_data_base64 = base64_encode($image_data);	
 	$res_image = 'data:image/'.$qrcode_image_type.';base64,'.$image_data_base64;
-	
+		
 	return $res_image;		
 }
 
